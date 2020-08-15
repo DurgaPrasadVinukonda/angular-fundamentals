@@ -130,7 +130,7 @@
 
     <div class="form-group">
       <label>Vehicles</label>
-      <div class="form-check" *ngFor="let vehicle of vehicles.controls; let i=index">
+      <div class="form-check" *ngFor="let vehicle of vehicles; let i=index">
         <input class="form-check-input" type="checkbox" [formControl]="vehicle">
         <label class="form-check-label">{{ vehiclesArr[i].label }}</label>
       </div>

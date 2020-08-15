@@ -46,8 +46,8 @@ export class ReactiveFormValidationComponent implements OnInit {
   buildVehicleCheckBoxControls() {
     let vehicleCheckBoxControls = [];
     this.vehiclesArr.forEach(vehicle => {
-      let control = this.fb.control(vehicle.selected);
-      vehicleCheckBoxControls.push(control);
+      // this.control = this.fb.control(vehicle.selected);
+      // vehicleCheckBoxControls.push(control);
     });
 
     return new FormArray(vehicleCheckBoxControls, checkboxRequiredValidator());

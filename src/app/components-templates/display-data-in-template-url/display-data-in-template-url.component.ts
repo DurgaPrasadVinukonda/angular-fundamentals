@@ -7,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DisplayDataInTemplateUrlComponent implements OnInit {
   
-  private title: string;
+ title: string;
   myHero: string;
   heroes: string[] = ['Windstorm', 'Bombasto', 'Magneta', 'Tornado'];
 
   constructor() { 
     this.title = 'Tour of Heroes';
     this.myHero = 'Windstorm';
-    let age = 20;    
+      
   }
 
   ngOnInit() {
